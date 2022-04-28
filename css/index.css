@@ -8,7 +8,7 @@
 
 /* ----------------------- A CONTINUACIÓN ESTILOS PARA LA PÁGINA "INICIO (INDEX)"------------------------- */
 
-/* ----------------  Definiendo GRID en estructura general ------------------- */
+/* ----------------  Definiendo GRID como estructura general ------------------- */
 
 .ml-1 {
   display: grid;
@@ -36,7 +36,7 @@
   height: 2rem;
 }
 
-/* ----------------  Definiendo GRID en estructura general ------------------- */
+/* ----------------  Definiendo GRID como estructura general ------------------- */
 
 /* ----------------  Definiendo GRID y/o Flexbox en el HEADER ------------------- */
 
@@ -179,7 +179,11 @@ abbr[title] {
 /* ----------------  Definiendo GRID y/o Flexbox en el FOOTER------------------- */
 
 .background__pages {
-  background-color: rgba(128, 127, 120, 0.5);
+  background: -webkit-linear-gradient(
+    -180deg,
+    rgb(144, 150, 156),
+    rgb(49, 54, 59)
+  );
 }
 
 span {
@@ -207,34 +211,35 @@ h4 {
   margin-top: 200px;
   text-align: center;
 }
+/*------------------------------ COMIENZO DE ANIMACIONES APLICADAS AL INDEX ---------------------------------*/
+
+.cita__index {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 87ch;
+  color: white;
+  font-size: 1.6rem;
+  animation: typing 5s steps(87), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/*------------------------------ FIN DE ANIMACIONES APLICADAS AL INDEX ---------------------------------*/
 
 /* -----------------------A CONTINUACIÓN: ESTILOS PARA LA PÁGINA "TIENDA"------------------------- */
-
-.tarjeta {
-  text-align: center;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  width: 300px;
-  height: 380px;
-  background: #ffd700;
-}
-
-.tarjeta__titulo {
-  color: black;
-  padding: 5px;
-}
-
-.tarjeta__imagen {
-  width: 100%;
-  height: 300px;
-  padding: 10px 10px 0px 10px;
-  border-radius: 15px;
-}
-
-.tarjeta__parrafo {
-  text-align: center;
-  font-size: 0.8rem;
-}
 
 .main__primeraSeccion {
   display: flex;
@@ -250,20 +255,83 @@ h4 {
   margin: 1rem;
 }
 
-.container2--nav {
+/*------------------------------ COMIENZO DE ANIMACIONES APLICADAS A LA PÁGINA TIENDA ---------------------------------*/
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 380px;
+}
+
+.card .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px black;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  color: #f3f3f3;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.card .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: linear-gradient(180deg, rgb(248, 212, 2), rgb(135, 137, 59));
+  padding: 15px;
+  color: black;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  /* padding: 2.5rem; */
+  text-align: center;
+  box-shadow: 0.5px 5px black;
 }
 
-.tarjeta--Odisea {
-  margin-left: 40px;
+.card .back .link {
+  border-top: solid 1px #000;
+  height: 50px;
 }
 
-.tarjeta--Oswald {
-  margin-right: 40px;
+.card .back .link a {
+  color: black;
 }
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  color: #000;
+}
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/*------------------------------ FIN DE ANIMACIONES APLICADAS A LA PÁGINA TIENDA ---------------------------------*/
+
 /* -----------------------A CONTINUACIÓN: ESTILOS PARA LA PÁGINA "TRABAJA CON NOSOTROS"------------------------- */
 
 .trabaja1 {
@@ -1093,7 +1161,7 @@ td {
   .container__cursos1 {
     display: flex;
     flex-direction: column;
-    min-height: 900px; /* esto antes estaba en height 900 sin el min */
+    min-height: 900px;
   }
 
   .mediaquery320 {
@@ -1200,19 +1268,11 @@ td {
     font-size: 0.8rem;
   }
 
-  /* .tablas__literatura {
-    width: 320px;
-  } */
-
   th,
   td {
     padding: 1px;
     font-size: 0.5rem;
   }
-
-  /* .tablas__literatura caption {
-    width: 320px;
-  } */
 
   .titulo_y_precio > ul {
     font-size: 0.7rem;
