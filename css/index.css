@@ -211,34 +211,7 @@ h4 {
   margin-top: 200px;
   text-align: center;
 }
-/*------------------------------ COMIENZO DE ANIMACIONES APLICADAS AL INDEX ---------------------------------*/
-
-.cita__index {
-  display: block;
-  font-family: monospace;
-  white-space: nowrap;
-  border-right: 3px solid;
-  width: 87ch;
-  color: white;
-  font-size: 1.6rem;
-  animation: typing 5s steps(87), blink 0.5s infinite step-end alternate;
-  overflow: hidden;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-/*------------------------------ FIN DE ANIMACIONES APLICADAS AL INDEX ---------------------------------*/
-
+/* aquí vas las animaciones del index */
 /* -----------------------A CONTINUACIÓN: ESTILOS PARA LA PÁGINA "TIENDA"------------------------- */
 
 .main__primeraSeccion {
