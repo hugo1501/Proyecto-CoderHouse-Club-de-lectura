@@ -46,6 +46,11 @@
   grid-template-columns: 1fr;
 }
 
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
 .container1 > h1 {
   padding: 5px;
 }
@@ -704,24 +709,38 @@ td {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   /* ------------- responsive 1024 para Inicio */
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .cita__index {
+    font-size: 1rem;
+  }
 
   .header__todas-las-paginas {
     height: auto;
   }
-  .container {
+  /* .container {
     height: 50rem;
-  }
+  } Estas líneas ya las tenía antes y comentamos esto porque estamos aplicando bootstrap y necesito esta clase. Al parecer no estaba afectando nada. */
 
   .container1 > h1 {
     padding: 5px;
     font-size: 3rem;
   }
 
-  section {
+  .de-prueba3 {
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 
   .qs__1eraS {
@@ -814,7 +833,8 @@ td {
   }
 
   .cita__index {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    display: none;
   }
 
   h1 {
@@ -1106,6 +1126,7 @@ td {
 
   .cita__index {
     font-size: 0.8rem;
+    display: none;
   }
 
   .container2__nav {
@@ -1409,4 +1430,47 @@ td {
     text-align: justify;
     height: fit-content;
   }
+}
+
+/* Estilos solo para el nav-bar responsive */
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+.de-prueba {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+  width: 100%;
+  background-image: url(../Imágenes-Proyecto-Coder/libros-640x426.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand {
+  width: 10%;
+}
+
+.de-prueba3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
 }
