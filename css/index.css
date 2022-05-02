@@ -24,7 +24,7 @@
 
 .header {
   grid-area: header;
-  height: 650px;
+  /* height: 650px; */
 }
 
 .main {
@@ -1432,7 +1432,7 @@ td {
   }
 }
 
-/* Estilos solo para el nav-bar responsive */
+/* comienzo de estilos solo para el nav-bar responsive del index */
 
 .navbar {
   margin: 0px;
@@ -1474,3 +1474,16 @@ td {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 1);
 }
+
+/* fin de estilos solo para el nav-bar responsive del index */
+
+/* comienzo de estilos solo para el nav-bar responsive del trabaja con nosotros */
+.navbar > .container-fluid {
+  background-color: #000;
+  padding: 15px;
+}
+/* fin de estilos solo para el nav-bar responsive del trabaja con nosotros */
+
+/* comienzo de estilos solo para el nav-bar responsive del cursos y ponencias */
+
+/* fin de estilos solo para el nav-bar responsive del cursos y ponencias */
