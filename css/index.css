@@ -211,7 +211,7 @@ h1 {
   font-size: 3.5rem;
 }
 
-h4 {
+.container4__h4delindex {
   font-size: 2.5rem;
   margin-top: 200px;
   text-align: center;
@@ -393,6 +393,20 @@ label {
 }
 
 /* -----------------------A CONTINUACIÓN: ESTILOS PARA LA PÁGINA "CURSOS Y PONENCIAS"------------------------- */
+/* .h2 {
+  clase creada para cursos y ponencias por BootS
+  height: auto;
+  width: 100%;
+  text-align: start;
+  padding-top: 10px;
+  font-size: 1.7rem;
+}
+
+.h4 {
+  clase creada para cursos y ponencias por BootS
+  margin-top: 20%;
+  color: #f3f3f3;
+} */
 
 .header__ponencias {
   height: 150px;
@@ -487,13 +501,13 @@ label {
   color: white;
 }
 
-h2 {
+/* h2 {
   height: 100%;
   width: 100%;
   text-align: start;
   padding-top: 10px;
   font-size: 1.7rem;
-}
+} anulamos porque parece que la única página que tiene h2 es cursos y ponencias y no hay otro*/
 
 p .form__languagesAndLevel {
   text-align: justify;
@@ -531,6 +545,7 @@ p .form__languagesAndLevel {
   justify-content: flex-start;
   padding: 0px 10px 10px;
   width: 75%;
+  height: auto;
 }
 
 .container__encabezados {
@@ -547,27 +562,27 @@ p .form__languagesAndLevel {
   color: #000;
 }
 
-.tablas {
+/* .tablas {
   width: 100%;
-}
+} */
 
-.tablas__literatura {
+/* .tablas__literatura {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
-.tablas__literatura--semana {
+/* .tablas__literatura--semana {
   border: 2px solid black;
   margin-bottom: 5px;
   text-align: center;
-}
+} */
 
-.tablas__literatura--titulo {
+/* .tablas__literatura--titulo {
   text-align: center;
   background-color: #000;
   color: white;
-}
+} */
 
 th,
 td {
@@ -754,6 +769,7 @@ td {
   .qs__2daS--img2 {
     margin-right: 5px;
   }
+  /* responsive min 768 max 1024 para cursos y ponencias */
 
   /* ------------- responsive 1024 para trabaja con nosotros */
   .trabaja1 {
@@ -841,12 +857,17 @@ td {
     font-size: 2.3rem;
   }
 
-  h2 {
+  /* h2 {
     height: auto;
     width: 100%;
     text-align: start;
     padding-top: 10px;
     font-size: 1.7rem;
+  } anulamos porque parece que la única página que tiene h2 es cursos y ponencias y no hay otro*/
+
+  .container4__h4delindex {
+    margin-top: 20%;
+    color: #f3f3f3;
   }
 
   .container1 > h1 {
@@ -893,11 +914,28 @@ td {
     height: 370px;
   }
 
-  h4 {
-    margin-top: 20%;
+  /* ----------------- RESPONSIVE 494-767 PARA CURSOS Y PONENCIAS */
+
+  /* .h2 {
+    clase creada para cursos y ponencias por BootS
+    height: auto;
+    width: 100%;
+    text-align: start;
+    padding-top: 10px;
+    font-size: 1.7rem;
   }
 
-  /* ----------------- RESPONSIVE 768 PARA CURSOS Y PONENCIAS */
+  .h4 {
+    clase creada para cursos y ponencias por BootS
+    margin-top: 20%;
+    color: #f3f3f3;
+  } */
+
+  th,
+  td {
+    padding: 1px;
+    font-size: 0.5rem;
+  }
   .container__cursos1,
   .container__Curso3 {
     display: flex;
@@ -1160,7 +1198,7 @@ td {
     padding: 4px;
   }
 
-  h4 {
+  .container4__h4delindex {
     font-size: 1.5rem;
     margin: 30% 0px;
   }
@@ -1178,6 +1216,28 @@ td {
     height: 14.4rem;
   }
   /* ------------- responsive min 320 max 493 para cursos y ponencias */
+
+  /* .h2 {
+    clase creada para cursos y ponencias por BootS
+    height: auto;
+    width: 100%;
+    text-align: start;
+    padding-top: 10px;
+    font-size: 1.7rem;
+  }
+
+  .h4 {
+    clase creada para cursos y ponencias por BootS
+    margin-top: 20%;
+    color: #f3f3f3;
+  } */
+  /* thead,
+  tbody {
+    width: 320px;
+  } */
+  /* .container-fluid {
+    width: 320px;
+  } */
   .container__cursos1 {
     display: flex;
     flex-direction: column;
@@ -1229,9 +1289,9 @@ td {
     padding-top: 1rem;
   }
 
-  .tablas__literatura--titulo {
+  /* .tablas__literatura--titulo {
     font-size: 1.2rem;
-  }
+  } */
 
   .libros {
     font-size: 1rem;
@@ -1243,10 +1303,10 @@ td {
     padding: 4px;
   }
 
-  .soloCursos {
+  /* .soloCursos {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .container__Curso1--imagen,
   .container__Curso2--imagen {
@@ -1273,7 +1333,7 @@ td {
     display: flex;
     flex-flow: column wrap;
     width: auto;
-    height: 220px;
+    /* height: 220px; */
     border-radius: 15px;
     align-items: center;
     text-align: center;
@@ -1292,7 +1352,7 @@ td {
   td {
     padding: 1px;
     font-size: 0.5rem;
-  }
+  } /*No podemos anularlar porque es lo que mantiene el responsive en las tablas*/
 
   .titulo_y_precio > ul {
     font-size: 0.7rem;
@@ -1487,3 +1547,5 @@ td {
 /* comienzo de estilos solo para el nav-bar responsive del cursos y ponencias */
 
 /* fin de estilos solo para el nav-bar responsive del cursos y ponencias */
+
+/* estilos haciendo desde cero cursos y ponencias */
