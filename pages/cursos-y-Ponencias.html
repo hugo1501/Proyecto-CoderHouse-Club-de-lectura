@@ -4,13 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cursos y ponencias - Libros con café</title>
+    <title>Desde cero- Cursos y ponencias</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FAVICON -->
     <link
       rel="icon"
       type="image/jpg"
       href="../Imágenes-Proyecto-Coder/logo.jpg"
     />
+
     <link rel="stylesheet" href="../css/index.css" />
+
     <!-- Google Fonts - Nombre: Laila - Grosor: Bold 700 y Light 300 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,145 +29,197 @@
       rel="stylesheet"
     />
   </head>
-  <body class="ml-1 background__pages">
-    <header class="header__ponencias">
-      <div class="container2">
-        <nav class="container2--nav">
-          <h1>Cursos y ponencias</h1>
-          <ul class="nav">
-            <li><a target="_blank" href="../index.html">Inicio</a></li>
-            <li><a target="_blank" href="tienda.html">Tienda</a></li>
-            <li>
-              <a target="_blank" href="quienes-Somos.html">Quiénes somos</a>
-            </li>
-            <li>
-              <a target="_blank" href="trabaja-con-nosotros.html"
-                >Trabaja con nosotros</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <body class="background__pages">
+    <!-- INICIO DEL HEADER -->
 
-    <main class="main main--contenedor">
-      <div class="container__encabezados">
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <h1>Cursos y Ponencias</h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienes-Somos.html"
+                    >Quienes somos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="trabaja-con-nosotros.html"
+                    >Trabaja con nosotros</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- FIN DEL HEADER -->
+
+      <!-- INICIO DEL MAIN -->
+      <div class="container__encabezados bg-warning">
         <h1 class="container__encabezados--titulo">Cursos</h1>
       </div>
-      <div class="soloCursos">
-        
-          <div class="container__cursos1">
-              <div class="imgTitulo__mq768">
-                <img
-                  class="container__Curso1--imagen"
-                  src="../Imágenes-Proyecto-Coder/Philip-Roth-cursos-ponencias.jpg"
-                  alt=""
-                />
-                <div class="titulo_y_precio">
-                  <h2 class="container__Curso1--titulo">
-                    El conflicto entre el judaísmo y la sexualidad en Philip Roth
-                  </h2>
-                  <ul>
-                    <ol>
-                      Precio: $1500
-                    </ol>
-                    <ol>
-                      Lunes y Miércoles durante todo marzo
-                    </ol>
-                    <ol>
-                      Horario: de 17 a 18
-                    </ol>
-                  </ul>
-              </div>  
-            </div>
-            <p class="container__Curso2--parrafo1">
-              Philip Roth fue uno de los más Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Eos, consequatur ipsa vero sunt nisi
-              quibusdam in odio magni, minus velit numquam ratione nostrum
-              debitis eius cum tenetur tempore rem ducimus
-            </p>
-          </div>
-        </div>
-        <div class="container__Curso2">
-          <div class="mediaquery320">
-            <div class="titulo_y_precio">
-              <h2 class="container__Curso2--titulo">
-                Curso de griego ático antiguo
-              </h2>
-              <ul class="container__Curso2--precio">
-                <ol>
-                  Precio: $1500
-                </ol>
-                <ol>
-                  Lunes y Miércoles durante todo marzo
-                </ol>
-                <ol>
-                  Horario: de 17 a 18
-                </ol>
-              </ul>
-            </div>
-                <p class="container__Curso2--parrafo1">
-                Con este curso de griego antiguo, Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Eos, consequatur ipsa vero sunt nisi
-                quibusdam in odio magni, minus velit numquam ratione nostrum
-                debitis eius cum tenetur tempore rem ducimus!
-                </p>
-          </div>    
 
+      <!-- INICIO CURSOS Y PONENCIAS PHILIP ROTH -->
 
+      <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-12 col-md-4">
+            
+                    <img class="col-12" 
+                    src="../Imágenes-Proyecto-Coder/Philip-Roth-cursos-ponencias.jpg"
+                    alt=""
+                    /> <!-- el col 12 es lo que hace que la foto se agrande en responsive en 320 en adelante-->
+                </div> 
+                        <div class="col-12 col-md-8 fw-bolder text-muted"> <!-- el col 8 más los cuatro de arriba suman 12 es lo que hace que sea responsive-->
+                            <h2 class="ps-4 pt-4">
+                                El conflicto entre el judaísmo y la sexualidad en Philip Roth
+                            </h2>
+                                <ul class="list-unstyled">
+                                <ol>
+                                    Precio: $1500
+                                </ol>
+                                <ol>
+                                    Lunes y Miércoles durante todo marzo
+                                </ol>
+                                <ol>
+                                    Horario: de 17 a 18
+                                </ol>
+                                </ul>
+                        </div>
+                    
+                        <div class="col-12 col-md-12">
+                            <p class="parrafos-cursos text-white my-3 mx-5">
+                            Philip Roth fue uno de los más Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos, consequatur ipsa vero sunt
+                            nisi quibusdam in odio magni, minus velit numquam ratione
+                            nostrum debitis eius cum tenetur tempore rem ducimus
+                            </p>
+                        </div>
+                
+            </div><!-- este es el tercero de arriba a abajo -->
+        </div><!-- este es el de row-->
+      
+    </div>
+<!-- FIN CURSOS Y PONENCIAS PHILIP ROTH -->
 
-              <img
-              class="container__Curso2--imagen"
-              src="../Imágenes-Proyecto-Coder/cursos-ponencias-curso2.jpg"
-              alt=""
-              />
-        </div>
-        
-        
-        <div class="container__Curso3">
-          <div class="imgTitulo__mq768">
-            <img
-              class="container__Curso1--imagen"
-              src="../Imágenes-Proyecto-Coder/antigua-grecia-escena-de-batalla.jpg"
-              alt=""
-            />
-            <div class="titulo_y_precio titulo_y_precio--Curso3">
-              <h2 class="container__Curso1--titulo">
-                La muerte por honor en la Iíada
-              </h2>
-              <ul>
-                <ol>
-                  Precio: $1500
-                </ol>
-                <ol>
-                  Lunes y Miércoles durante todo marzo
-                </ol>
-                <ol>
-                  Horario: de 17 a 18
-                </ol>
-              </ul>
-            </div>
-          </div>
-          <p class="container__Curso2--parrafo1">
-            La cantidad de muertes en la Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Eos, consequatur ipsa vero sunt nisi quibusdam in
-            odio magni, minus velit numquam ratione nostrum debitis eius cum
-            tenetur tempore rem ducimus!
-          </p>
-        </div>
-      </div>
-      <div class="container__encabezados">
+<!-- INICIO CURSOS Y PONENCIAS CURSO DE GRIEGO ÁTICO ANTIGUO -->
+    <div class="container-fluid bg-warning fw-bolder">
+            <div class="row">
+                
+                
+                        <div class="col-12 col-md-8 fw-bolder text-dark"> <!-- el col 8 más los cuatro de arriba suman 12 es lo que hace que sea responsive-->
+                            <h2 class="ps-4 pt-4">
+                                Curso de griego ático antiguo
+                            </h2>
+                                <ul class="list-unstyled">
+                                <ol>
+                                    Precio: $1500
+                                </ol>
+                                <ol>
+                                    Lunes y Miércoles durante todo marzo
+                                </ol>
+                                <ol>
+                                    Horario: de 17 a 18
+                                </ol>
+                                </ul>
+                        </div>
+                    
+                        
+                        <div class="col-12 col-md-4">
+            
+                    <img class="col-12" 
+                    src="../Imágenes-Proyecto-Coder/cursos-ponencias-curso2.jpg"
+                    alt="" width="265,33" height="308,69"
+                    /> <!-- el col 12 es lo que hace que la foto se agrande en responsive en 320 en adelante-->
+                </div> 
+                
+                <div class="col-12 col-md-12"> <!-- la ubicación es importante para complementar con bootstrap-->
+                            <p class="parrafos-cursos text-dark my-3 mx-5">
+                            Con este curso de griego antiguo Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos, consequatur ipsa vero sunt
+                            nisi quibusdam in odio magni, minus velit numquam ratione
+                            nostrum debitis eius cum tenetur tempore rem ducimus
+                            </p>
+                        </div>
+                
+            </div><!-- este es el tercero de arriba a abajo -->
+        </div><!-- este es el de row-->
+      
+    </div>
+<!-- FIN CURSOS Y PONENCIAS CURSO DE GRIEGO ANTIGUO -->
+
+<!-- INICIO CURSOS Y PONENCIAS CURSO LA MUERTE EN LA ÍLIADA -->
+
+<div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-12 col-md-4">
+            
+                    <img class="col-12" 
+                    src="../Imágenes-Proyecto-Coder/antigua-grecia-escena-de-batalla.jpg"
+                    alt="" height="208,69"
+                    /> <!-- el col 12 es lo que hace que la foto se agrande en responsive en 320 en adelante-->
+                </div> 
+                        <div class="col-12 col-md-8 fw-bolder text-muted"> <!-- el col 8 más los cuatro de arriba suman 12 es lo que hace que sea responsive-->
+                            <h2 class="ps-4 pt-4">
+                                La muerte por honor en la Ilíada
+                            </h2>
+                                <ul class="list-unstyled">
+                                <ol>
+                                    Precio: $1500
+                                </ol>
+                                <ol>
+                                    Lunes y Miércoles durante todo marzo
+                                </ol>
+                                <ol>
+                                    Horario: de 17 a 18
+                                </ol>
+                                </ul>
+                        </div>
+                    
+                        <div class="col-12 col-md-12">
+                            <p class="parrafos-cursos text-white my-3 mx-5">
+                           La cantidad de muertes en la Ilíada es Lorem ipsum, dolor sit amet
+                            consectetur adipisicing elit. Eos, consequatur ipsa vero sunt
+                            nisi quibusdam in odio magni, minus velit numquam ratione
+                            nostrum debitis eius cum tenetur tempore rem ducimus
+                            </p>
+                        </div>
+                
+            </div><!-- este es el tercero de arriba a abajo -->
+        </div><!-- este es el de row-->
+      
+    </div>
+
+<!-- FIN CURSOS Y PONENCIAS CURSOS LA MUERTE EN LA ÍLIADA -->
+
+<!-- INICIO TARJETAS DE PONENCIAS -->
+
+<div class="container__encabezados bg-warning">
         <h1 class="container__encabezados--titulo">Ponencias</h1>
       </div>
-      <div class="container__cursos2">
-        <div class="container__ponencia1">
-          <div class="container__ponencias--titulo">
-            <h2 class="container__ponencias--tituloDelDiv">
-              La literatura estadounidense durante la guerra fría
-            </h2>
-          </div>
-          <div class="container__ponencias--titulo--lista">
-            <ul>
+<div class="container">
+     <div class="row">
+       <div class="col-12 col-md-4">
+         <div class="card text-white bg-dark mb-3" style="width: 100%">
+  <div class="card-header fs-2 text-center">La literatura estadounidense durante la guerra fría</div>
+  <div class="card-body">
+    <ul class="card-text fs-6 list-unstyled">
               <ol>
                 Ponente: Julia Ovejero
               </ol>
@@ -171,17 +233,14 @@
                 Horario: de 17 a 18
               </ol>
             </ul>
-          </div>
-        </div>
-
-        <div class="container__ponencia2">
-          <div class="container__ponencias--titulo">
-            <h2 class="container__ponencias--texto--card2y3">
-              El griego ático frente al griego homérico
-            </h2>
-          </div>
-          <div class="container__ponencias--titulo--lista">
-            <ul>
+  </div>
+</div>
+       </div>
+       <div class="col-12 col-md-4">
+         <div class="card text-white bg-dark mb-3" style="width: 100%">
+  <div class="card-header fs-2 text-center">El griego ático frente al griego homérico</div>
+  <div class="card-body">
+    <ul class="card-text fs-6 list-unstyled">
               <ol>
                 Ponente: Madeleine Gomez
               </ol>
@@ -195,17 +254,14 @@
                 Horario: de 17 a 18
               </ol>
             </ul>
-          </div>
-        </div>
-
-        <div class="container__ponencia3">
-          <div class="container__ponencias--titulo">
-            <h2 class="container__ponencias--texto--card2y3">
-              <i>Edipo Rey</i> de Sófocles a la luz del psicoanálisis
-            </h2>
-          </div>
-          <div class="container__ponencias--titulo--lista">
-            <ul>
+  </div>
+</div>
+       </div>
+       <div class="col-12 col-md-4">
+         <div class="card text-white bg-dark mb-3" style="width: 100%" >
+  <div class="card-header fs-2 text-center">Edipo Rey de Sófocles a la luz del psicoanálisis</div>
+  <div class="card-body">
+    <ul class="card-text fs-6 list-unstyled">
               <ol>
                 Ponente: Luis Carrascal
               </ol>
@@ -219,134 +275,153 @@
                 Horario: de 17 a 18
               </ol>
             </ul>
-          </div>
-        </div>
-      </div>
+  </div>
+</div>
+       </div>
+     </div>
+   </div>
+<!-- FIN DE TARJETAS DE PONENCIAS -->
 
-      <div class="container__encabezados">
+<!-- INICIO DE TABLAS CLUB DE LECTURA -->
+
+<div class="container__encabezados bg-warning">
         <h1 class="container__encabezados--titulo">Club de lectura</h1>
       </div>
-      <div class="tablas">
-        <div class="tablas__literatura">
-          <h2 class="tablas__literatura--titulo">Literatura estadounidense.</h2>
-          <table class="tablas__literatura--semana">
-            <caption class="libros">
-              Semana de Paul Auster. La trilogía de New York.
-            </caption>
-            <div>
-              <thead>
-                <tr class="tablas__literatura--cronograma">
-                  <th>Fecha</th>
-                  <th>Horario</th>
-                  <th>Título del libro</th>
-                  <th>Lunes</th>
-                  <th>Martes</th>
-                  <th>Miércoles</th>
-                  <th>Jueves</th>
-                  <th>Viernes</th>
-                </tr>
-              </thead>
 
-              <tbody>
-                <tr>
-                  <td>18/04</td>
-                  <td>15 a 16</td>
-                  <td><i>Ciudad de cristal</i></td>
-                  <td>17:45 a 18:45</td>
-                  <td>-</td>
-                  <td>20:15 a 21:15</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-
-                <tr>
-                  <td>25/04</td>
-                  <td>15 a 16</td>
-                  <td><i>Fantasmas</i></td>
-                  <td>17:45 a 18:45</td>
-                  <td>-</td>
-                  <td>20:15 a 21:15</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-
-                <tr>
-                  <td>02/05</td>
-                  <td>15 a 16</td>
-                  <td><i>La habitación cerrada</i></td>
-                  <td>17:45 a 18:45</td>
-                  <td>-</td>
-                  <td>20:15 a 21:15</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-              </tbody>
+<div class="container-fluid text-center">
+            <div class="row">
+              <div class="col">
+                <h2 class="h2">
+                  Literatura de la antigua Grecia y Roma.
+                </h2>
+                <h5 class="h4 fw-bolder">Semana de Esquilo. Trilogía La Orestíada.</h5>
+              </div>
             </div>
-          </table>
-        </div>
-
-        <div class="tablas__literatura">
-          <h2 class="tablas__literatura--titulo">
-            Literatura de la antigua Grecia y Roma.
-          </h2>
-          <table class="tablas__literatura--semana">
-            <caption class="libros">
-              Semana de Esquilo. Trilogía La Orestíada.
-            </caption>
-            <div class="tablas__literatura--cronograma">
-              <thead>
-                <tr>
-                  <th>Fecha</th>
-                  <th>Horario</th>
-                  <th>Título del libro</th>
-                  <th>Lunes</th>
-                  <th>Martes</th>
-                  <th>Miércoles</th>
-                  <th>Jueves</th>
-                  <th>Viernes</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>18/04</td>
-                  <td>15 a 16</td>
-                  <td><i>Agamenón</i></td>
-                  <td>17:45 a 18:45</td>
-                  <td>-</td>
-                  <td>20:15 a 21:15</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-
-                <tr>
-                  <td>25/04</td>
-                  <td>15 a 16</td>
-                  <td><i>Las coéforas</i></td>
-                  <td>17:45 a 18:45</td>
-                  <td>-</td>
-                  <td>20:15 a 21:15</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-
-                <tr>
-                  <td>02/05</td>
-                  <td>15 a 16</td>
-                  <td><i>Las Euménides</i></td>
-                  <td>17:45 a 18:45</td>
-                  <td>-</td>
-                  <td>20:15 a 21:15</td>
-                  <td>-</td>
-                  <td>-</td>
-                </tr>
-              </tbody>
+          </div>
+            
+      
+      <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <table class="table table-sm table-md table-lg table-xl table-xxl table-dark table-hover table-bordered text-center">
+                  <thead>
+                        <tr>
+                          <th>Fecha</th>
+                          <th>Horario</th>
+                          <th>Título del libro</th>
+                          <th>Lunes</th>
+                          <th>Martes</th>
+                          <th>Miércoles</th>
+                          <th>Jueves</th>
+                          <th>Viernes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>18/04</td>
+                          <td>15 a 16</td>
+                          <td><i>Agamenón</i></td>
+                          <td>17:45 a 18:45</td>
+                          <td>-</td>
+                          <td>20:15 a 21:15</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>25/04</td>
+                          <td>15 a 16</td>
+                          <td><i>Las coéforas</i></td>
+                          <td>17:45 a 18:45</td>
+                          <td>-</td>
+                          <td>20:15 a 21:15</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>02/05</td>
+                          <td>15 a 16</td>
+                          <td><i>Las Euménides</i></td>
+                          <td>17:45 a 18:45</td>
+                          <td>-</td>
+                          <td>20:15 a 21:15</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                      </tbody>
+                </table>
+              </div>
             </div>
-          </table>
-        </div>
       </div>
-    </main>
+            <!-- Fin Tabla 1 -->
+            <!-- Inicio Tabla 2 -->
+            <div class="container-fluid text-center">
+            <div class="row">
+              <div class="col">
+                <h2 class="h2">
+                  Literatura estadounidense.
+                </h2>
+                <h5 class="h4 fw-bolder">Semana de Paul Auster. La trilogía de New York</h5>
+              </div>
+            </div>
+          </div>
+      <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <table class="table table-sm table-md table-lg table-xl table-xxl table-dark table-hover table-bordered text-center">
+                  <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Horario</th>
+                    <th>Título del libro</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>18/04</td>
+                    <td>15 a 16</td>
+                    <td><i>Ciudad de cristal</i></td>
+                    <td>17:45 a 18:45</td>
+                    <td>-</td>
+                    <td>20:15 a 21:15</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>25/04</td>
+                    <td>15 a 16</td>
+                    <td><i>Fantasmas</i></td>
+                    <td>17:45 a 18:45</td>
+                    <td>-</td>
+                    <td>20:15 a 21:15</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>02/05</td>
+                    <td>15 a 16</td>
+                    <td><i>La habitación cerrada</i></td>
+                    <td>17:45 a 18:45</td>
+                    <td>-</td>
+                    <td>20:15 a 21:15</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+           <!-- Fin tabla 2 -->
 
+<!-- FIN DE TABLAS CLUB DE LECTURA -->
+    <!-- FIN DEL MAIN -->
+
+    <!-- INICIO DEL FOOTER -->
     <footer class="footer">
       <p class="footer__texto">
         Derechos reservados.librosconcafe.com 2022 &copy;
@@ -374,5 +449,6 @@
         />
       </section>
     </footer>
+    <!-- FIN DEL FOOTER -->
   </body>
 </html>

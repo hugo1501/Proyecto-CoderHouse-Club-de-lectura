@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trabaja con nosotros - Libros con café</title>
+    <title>Maquetando con Bootstrap- trabaja-con-nosotros</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link
       rel="icon"
       type="image/jpg"
       href="../Imágenes-Proyecto-Coder/logo.jpg"
     />
+
     <link rel="stylesheet" href="../css/index.css" />
     <!-- Google Fonts - Nombre: Laila - Grosor: Bold 700 y Light 300 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,26 +28,51 @@
       rel="stylesheet"
     />
   </head>
-  <body class="ml-1 background__pages">
-    <header class="header header__todas-las-paginas">
-      <div class="container2">
-        <nav class="container2--nav">
-          <h1>Trabaja con nosotros</h1>
-          <ul class="nav">
-            <li><a target="_blank" href="../index.html">Inicio</a></li>
-            <li>
-              <a target="_blank" href="cursos-y-Ponencias.html"
-                >Cursos y ponencias</a
-              >
-            </li>
-            <li><a target="_blank" href="tienda.html">Tienda</a></li>
-            <li>
-              <a target="_blank" href="quienes-Somos.html">Quiénes somos</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <body class="ml-1 background__pages fw-bolder text-dark">
+    <!-- inicio de} header -->
 
+<div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <h1>Trabaja con nosotros</h1>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cursos-y-Ponencias.html"
+                    >Cursos y ponencias</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienes-Somos.html"
+                    >Quienes somos</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- fin del header -->
+    <!----------------------- inicio DEL MAIN ------------------------->
+
+    <main class="main">
       <div class="trabaja1">
         <p class="footer__texto mediaQuery">
           Porque sabemos cuan difícil es lograr un trabajo cuando te recibes de
@@ -47,9 +81,6 @@
           requeridos más abajo y espera nuestro contacto.
         </p>
       </div>
-    </header>
-
-    <main class="main">
       <form action="">
         <fieldset>
           <div class="form__info">
