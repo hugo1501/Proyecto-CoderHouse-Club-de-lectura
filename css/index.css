@@ -1,6 +1,4 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-family: "Laila", sans-serif;
   font-family: "Libre Baskerville", serif;
@@ -24,7 +22,6 @@
 
 .header {
   grid-area: header;
-  height: 650px;
 }
 
 .main {
@@ -44,6 +41,11 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
 }
 
 .container1 > h1 {
@@ -206,7 +208,7 @@ h1 {
   font-size: 3.5rem;
 }
 
-h4 {
+.container4__h4delindex {
   font-size: 2.5rem;
   margin-top: 200px;
   text-align: center;
@@ -268,7 +270,7 @@ h4 {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   transition: 0.5s;
 }
@@ -276,6 +278,7 @@ h4 {
 .card .front {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px black;
+  background: silver;
 }
 
 .card .front img {
@@ -483,14 +486,6 @@ label {
   color: white;
 }
 
-h2 {
-  height: 100%;
-  width: 100%;
-  text-align: start;
-  padding-top: 10px;
-  font-size: 1.7rem;
-}
-
 p .form__languagesAndLevel {
   text-align: justify;
   padding: 100px 15px 0px 0px;
@@ -527,6 +522,7 @@ p .form__languagesAndLevel {
   justify-content: flex-start;
   padding: 0px 10px 10px;
   width: 75%;
+  height: auto;
 }
 
 .container__encabezados {
@@ -541,28 +537,6 @@ p .form__languagesAndLevel {
   padding-top: 0.1rem;
   font-size: 70px;
   color: #000;
-}
-
-.tablas {
-  width: 100%;
-}
-
-.tablas__literatura {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tablas__literatura--semana {
-  border: 2px solid black;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.tablas__literatura--titulo {
-  text-align: center;
-  background-color: #000;
-  color: white;
 }
 
 th,
@@ -628,7 +602,6 @@ td {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   margin-top: 300px;
-  /* background-color: red; */
   color: #000;
   font-size: 29px;
   height: auto;
@@ -705,14 +678,25 @@ td {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   /* ------------- responsive 1024 para Inicio */
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .cita__index {
+    font-size: 1rem;
+  }
 
   .header__todas-las-paginas {
     height: auto;
-  }
-  .container {
-    height: 50rem;
   }
 
   .container1 > h1 {
@@ -720,9 +704,9 @@ td {
     font-size: 3rem;
   }
 
-  section {
+  .de-prueba3 {
     display: flex;
-    align-items: center;
+    flex-direction: column;
   }
 
   .qs__1eraS {
@@ -735,6 +719,10 @@ td {
 
   .qs__2daS--img2 {
     margin-right: 5px;
+  }
+  /* responsive min 768 max 1024 para cursos y ponencias */
+  .card-body {
+    padding: 0px;
   }
 
   /* ------------- responsive 1024 para trabaja con nosotros */
@@ -815,19 +803,17 @@ td {
   }
 
   .cita__index {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    display: none;
   }
 
   h1 {
     font-size: 2.3rem;
   }
 
-  h2 {
-    height: auto;
-    width: 100%;
-    text-align: start;
-    padding-top: 10px;
-    font-size: 1.7rem;
+  .container4__h4delindex {
+    margin-top: 20%;
+    color: #f3f3f3;
   }
 
   .container1 > h1 {
@@ -874,11 +860,12 @@ td {
     height: 370px;
   }
 
-  h4 {
-    margin-top: 20%;
+  /* ----------------- RESPONSIVE 494-767 PARA CURSOS Y PONENCIAS */
+  th,
+  td {
+    padding: 1px;
+    font-size: 0.5rem;
   }
-
-  /* ----------------- RESPONSIVE 768 PARA CURSOS Y PONENCIAS */
   .container__cursos1,
   .container__Curso3 {
     display: flex;
@@ -1107,6 +1094,7 @@ td {
 
   .cita__index {
     font-size: 0.8rem;
+    display: none;
   }
 
   .container2__nav {
@@ -1140,7 +1128,7 @@ td {
     padding: 4px;
   }
 
-  h4 {
+  .container4__h4delindex {
     font-size: 1.5rem;
     margin: 30% 0px;
   }
@@ -1158,6 +1146,7 @@ td {
     height: 14.4rem;
   }
   /* ------------- responsive min 320 max 493 para cursos y ponencias */
+
   .container__cursos1 {
     display: flex;
     flex-direction: column;
@@ -1209,10 +1198,6 @@ td {
     padding-top: 1rem;
   }
 
-  .tablas__literatura--titulo {
-    font-size: 1.2rem;
-  }
-
   .libros {
     font-size: 1rem;
   }
@@ -1221,11 +1206,6 @@ td {
     display: flex;
     flex-direction: column;
     padding: 4px;
-  }
-
-  .soloCursos {
-    display: flex;
-    flex-direction: column;
   }
 
   .container__Curso1--imagen,
@@ -1253,7 +1233,6 @@ td {
     display: flex;
     flex-flow: column wrap;
     width: auto;
-    height: 220px;
     border-radius: 15px;
     align-items: center;
     text-align: center;
@@ -1272,7 +1251,7 @@ td {
   td {
     padding: 1px;
     font-size: 0.5rem;
-  }
+  } /*No podemos anularlar porque es lo que mantiene el responsive en las tablas*/
 
   .titulo_y_precio > ul {
     font-size: 0.7rem;
@@ -1410,4 +1389,65 @@ td {
     text-align: justify;
     height: fit-content;
   }
+}
+
+/* comienzo de estilos solo para el nav-bar responsive del index */
+
+.navbar {
+  margin: 0px;
+  padding: 0px;
+}
+
+.de-prueba {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+  width: 100%;
+  background-image: url(../Imágenes-Proyecto-Coder/libros-640x426.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-brand {
+  width: 10%;
+}
+
+.de-prueba3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-brand {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* fin de estilos solo para el nav-bar responsive del index */
+
+/* comienzo de estilos solo para el nav-bar responsive del trabaja con nosotros */
+.navbar > .container-fluid {
+  background-color: #000;
+  padding: 15px;
+}
+/* fin de estilos solo para el nav-bar responsive del trabaja con nosotros */
+
+/* comienzo de estilos solo para el nav-bar responsive del cursos y ponencias */
+
+/* fin de estilos solo para el nav-bar responsive del cursos y ponencias */
+
+/* estilos haciendo desde cero cursos y ponencias */
+.parrafos-cursos {
+  text-align: justify;
 }
