@@ -527,14 +527,12 @@ p .form__languagesAndLevel {
 .container__encabezados {
   display: flex;
   justify-content: center;
-  background-color: #ffd700;
+  align-items: center;
   height: 5rem;
   margin: 5px 0px;
 }
 
 .container__encabezados--titulo {
-  padding-top: 0.1rem;
-  font-size: 70px;
   color: #000;
 }
 
@@ -553,7 +551,6 @@ td {
 
 /* ----------------------- A CONTINUACIÓN ESTILOS PARA LA PÁGINA "QUIENES SOMOS"------------------------- */
 
-.qs__1eraS,
 .qs__3eraS {
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -590,12 +587,12 @@ td {
   align-items: center;
 }
 
-.qs__2daS-titulo {
+/* .qs__2daS-titulo {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-}
+  align-items: flex-start;
+} */
 
 .qs__2daS-titulo1 {
   -webkit-transform: rotate(-90deg);
@@ -646,10 +643,6 @@ td {
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
-  .container {
-    height: 50rem;
-  }
-
   .cita__index {
     width: 100%;
   }
@@ -679,6 +672,10 @@ td {
 
 @media screen and (min-width: 1024px) {
   .navbar-brand {
+    display: none;
+  }
+
+  .hidden2 {
     display: none;
   }
 }
@@ -722,6 +719,10 @@ td {
   /* responsive min 768 max 1024 para cursos y ponencias */
   .card-body {
     padding: 0px;
+  }
+
+  .hidden2 {
+    display: none;
   }
 
   /* ------------- responsive 1024 para trabaja con nosotros */
@@ -860,6 +861,7 @@ td {
   }
 
   /* ----------------- RESPONSIVE 494-767 PARA CURSOS Y PONENCIAS */
+
   th,
   td {
     padding: 1px;
@@ -985,6 +987,7 @@ td {
 
   .qs__2daS--img2 {
     margin-right: 5px;
+    display: none;
   }
 
   .qs__1eraS {
@@ -1183,20 +1186,6 @@ td {
     margin-top: 5px;
   }
 
-  .container__encabezados {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    padding-bottom: 5%;
-    margin-bottom: 0px;
-  }
-
-  .container__encabezados--titulo {
-    font-size: 1.4rem;
-    padding-top: 1rem;
-  }
-
   .libros {
     font-size: 1rem;
   }
@@ -1323,12 +1312,12 @@ td {
     font-size: 0.8rem;
   }
 
-  .qs__1eraS--img1 {
+  /* .qs__1eraS--img1 {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     margin: 2px 2px 0px 2px;
-  }
+  } */
 
   /* ------------- responsive 320 para trabaja con nosotros */
 
