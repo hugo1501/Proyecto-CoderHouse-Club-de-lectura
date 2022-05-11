@@ -47,12 +47,12 @@
   &--test-foto {
     display: flex;
     flex-direction: row;
+  }
 
-    &--img3 {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-    }
+  &--img3 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
   }
 }
 
