@@ -17,15 +17,13 @@
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     margin-top: 300px;
-    color: #000;
+    color: $color;
     font-size: 29px;
     height: auto;
   }
 
   &--texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-center;
 
     &--parrafo {
       text-align: justify;
@@ -75,8 +73,7 @@
   .qs__1eraS,
   .qs__3eraS,
   .qs__3eraS--test-foto {
-    display: flex;
-    flex-direction: column;
+    @include mixin1(flex, column);
   }
 
   .qs__2daS--img2 {
