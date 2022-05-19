@@ -24,11 +24,11 @@
 
   &--texto {
     @include flex-center-center;
+  }
 
-    &--parrafo {
-      text-align: justify;
-      padding: 25px;
-    }
+  &--parrafo {
+    text-align: justify;
+    padding: 25px;
   }
 
   &--img2 {
@@ -87,9 +87,9 @@
 
   .qs__1eraS--parrafoVision,
   .qs__1eraS--parrafoTestimonios {
-    text-align: center;
     font-size: 0.7rem;
     width: 100%;
+    text-align: justify;
   }
 
   .qs__2daS--parrafo,
