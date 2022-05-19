@@ -128,15 +128,6 @@ h1 {
 
 /*        -------------------------        MEDIAS QUERIES         ------------------------------------------------ */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  // .footer {
-  //   display: flex;
-  //   align-items: center;
-  //   flex-direction: row wrap;
-  //   justify-content: space-between;
-  // }
-}
-
 @media screen and (min-width: 494px) and (max-width: 767px) {
   body {
     @include mixin1(flex, column);
@@ -155,21 +146,6 @@ h1 {
     font-size: 1.38rem;
     margin-top: 10px;
   }
-
-  // .footer {
-  //   font-size: 0.8rem;
-
-  //   &__texto {
-  //     width: 360px;
-  //     height: 8px;
-  //   }
-
-  //   &__img {
-  //     width: 23px;
-  //     height: 23px;
-  //     padding: 2px;
-  //   }
-  // }
 
   section {
     display: flex;
