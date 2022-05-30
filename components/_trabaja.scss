@@ -31,14 +31,12 @@ label {
 
 .trabaja__mq320 {
   display: flex;
-  flex-direction: row;
   padding: 1px;
   gap: 25px;
 }
 
 .idiom__md768 {
   display: flex;
-  justify-content: flex-start;
   padding: 10px;
   gap: 0.5rem;
 }
@@ -50,44 +48,6 @@ label {
     @include flex-center-center;
     height: 150px;
   }
-
-  .trabaja1 {
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
-
-  form {
-    font-size: 0.9rem;
-    padding: 0.2rem;
-  }
-
-  fieldset div {
-    padding: 3px;
-  }
-
-  ::placeholder,
-  select,
-  button {
-    font-size: 0.8rem;
-  }
-
-  label {
-    @include mixin1(flex, column);
-  }
-
-  .trabaja__mq320 {
-    display: flex;
-    flex-direction: row;
-    padding: 1px;
-    gap: 25px;
-  }
-
-  .idiom__md768 {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-    gap: 0.5rem;
-  }
 }
 
 @media screen and (min-width: 494px) and (max-width: 767px) {
@@ -96,48 +56,18 @@ label {
     height: 200px;
   }
 
-  .trabaja1 {
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
-
-  form {
-    font-size: 0.9rem;
-    padding: 0.2rem;
-  }
-
-  fieldset div {
-    padding: 3px;
-  }
-
-  ::placeholder,
-  select,
-  button {
-    font-size: 0.8rem;
-  }
-
-  label {
-    @include mixin1(flex, column);
-  }
-
   .trabaja__mq320 {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding: 1px;
-    gap: 2px;
   }
 
   .idiom__md768 {
-    display: flex;
-    justify-content: flex-start;
     padding: 10px;
     gap: 0.5rem;
   }
 
   .trabaja1 > p {
     text-align: justify;
-    height: fit-content;
   }
 }
 
@@ -145,11 +75,11 @@ label {
   .trabaja1 {
     @include flex-center-center;
     height: 150px;
+    font-size: 0.7rem;
   }
 
-  .trabaja1 {
-    font-weight: bold;
-    font-size: 0.7rem;
+  .trabaja1 > p {
+    text-align: justify;
   }
 
   form {
@@ -157,33 +87,7 @@ label {
     padding: 0.2rem;
   }
 
-  fieldset {
-    width: 310px;
-  }
-
-  fieldset div {
-    padding: 3px;
-  }
-
-  ::placeholder,
-  select,
-  button {
-    font-size: 0.7rem;
-  }
-
-  label {
-    @include mixin1(flex, column);
-  }
-
   .trabaja__mq320 {
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    width: 310px;
-  }
-
-  .trabaja1 > p {
-    text-align: justify;
-    height: fit-content;
+    gap: 0;
   }
 }

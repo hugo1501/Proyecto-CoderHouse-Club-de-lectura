@@ -1,34 +1,3 @@
-.container-fluid {
-  margin: 0px;
-  padding: 0px;
-}
-
-.background__pages {
-  background: -webkit-linear-gradient(
-    -180deg,
-    rgb(144, 150, 156),
-    rgb(49, 54, 59)
-  );
-}
-
-span {
-  font-size: 1.2rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-h3 {
-  font-size: 1rem;
-  padding: 10px;
-}
-
-h1 {
-  color: $color2;
-  font-size: 3.5rem;
-}
-
 .main {
   p {
     font-size: 1.5rem;
@@ -36,7 +5,7 @@ h1 {
 
   &__primeraSeccion {
     display: flex;
-    flex-direction: row wrap;
+    flex-direction: row;
     justify-content: space-between;
     margin: 1rem;
     column-gap: 15px;
@@ -47,8 +16,6 @@ h1 {
     justify-content: space-around;
   }
 }
-
-/*------------------------------ COMIENZO DE ANIMACIONES APLICADAS A LA PÁGINA TIENDA ---------------------------------*/
 
 .card {
   position: relative;
@@ -124,9 +91,7 @@ h1 {
   transform: perspective(600px) rotateY(360deg);
 }
 
-/*------------------------------ FIN DE ANIMACIONES APLICADAS A LA PÁGINA TIENDA ---------------------------------*/
-
-/*        -------------------------        MEDIAS QUERIES         ------------------------------------------------ */
+/*        -------------------------  MEDIAS QUERIES  ------------------------------------------------ */
 
 @media screen and (min-width: 494px) and (max-width: 767px) {
   body {
@@ -152,8 +117,6 @@ h1 {
     align-items: center;
   }
 
-  /* Responsive 768 para Tienda */
-
   .main__primeraSeccion,
   .main__segundaSeccion {
     display: flex;
@@ -164,6 +127,7 @@ h1 {
 }
 
 @media screen and (min-width: 320px) and (max-width: 493px) {
+
   span {
     font-size: 0.7rem;
   }
@@ -171,8 +135,6 @@ h1 {
   h1 {
     font-size: 1.35rem;
   }
-
-  /* ------------- responsive 320 Tienda */
 
   .main__primeraSeccion,
   .main__segundaSeccion {

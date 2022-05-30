@@ -1,3 +1,15 @@
+.de-prueba {
+  height: 400px;
+  width: 100%;
+  background-image: url(../imagenes-proyecto-coder/libros-640x426.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.de-prueba3 {
+  @include mixin1(flex, column);
+}
+
 .cita__index {
   display: block;
   font-family: monospace;
@@ -8,6 +20,17 @@
   font-size: 1.6rem;
   animation: typing 5s steps(87), blink 0.5s infinite step-end alternate;
   overflow: hidden;
+}
+
+
+.container4__h4delindex {
+  font-size: 2.5rem;
+  margin-top: 200px;
+  text-align: center;
+}
+
+.navbar-brand {
+  display:none;
 }
 
 @keyframes typing {
@@ -52,17 +75,15 @@ abbr[title] {
 
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
   .cita__index {
-    width: 100%;
+    font-size: 1.3rem;
   }
-}
 
-@media screen and (min-width: 1024px) {
   .navbar-brand {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar-brand {
     display: none;
   }
@@ -98,8 +119,11 @@ abbr[title] {
 }
 
 @media screen and (min-width: 494px) and (max-width: 767px) {
+  .de-prueba  {
+    height: 250px;
+  }
+  
   .cita__index {
-    font-size: 1rem;
     display: none;
   }
 
@@ -115,16 +139,17 @@ abbr[title] {
 }
 
 @media screen and (min-width: 320px) and (max-width: 493px) {
+  .de-prueba  {
+    height: 200px;
+  }
+
   .container4,
   .container5 {
     height: 300px;
   }
 
   .cita__index {
-    font-size: 0.8rem;
     display: none;
-    margin: 0px 0px 4px;
-    padding: 4px;
   }
 
   .container4__h4delindex {
